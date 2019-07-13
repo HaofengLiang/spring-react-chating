@@ -1,6 +1,6 @@
 # spring-react-chating
 ### Authors: 
->**_haofeng.liang@stonybrook.edu_**   **_karinchen@yeah.net_**  
+@HaofengLiang    @chenk97
 
 ### Create Database and User (MySQL)
 ```
