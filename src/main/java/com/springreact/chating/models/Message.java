@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -22,10 +23,10 @@ public class Message {
     private String message;
     private Long sentAt;
 
-    public Message(User from, User to, String message, Long sentAt) {
+    public Message(User from, User to, String message) {
         this.from = from;
         this.to = to;
         this.message = message;
-        this.sentAt = sentAt;
+        this.sentAt = new Date().getTime();
     }
 }
