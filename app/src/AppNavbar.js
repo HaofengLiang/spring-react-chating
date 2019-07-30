@@ -38,10 +38,10 @@ export default class AppNavbar extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href={Link} to="/about">About</NavLink>
+                            <NavLink href={Link} to="/logIn">Log In</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href={Link} to="/signIn">Sign In</NavLink>
+                            <NavLink href={Link} to="/visitor">Get Started</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import logo from './idlelogo.jpg';
+import logo from './logo.gif';
 import AppNavbar from './AppNavbar';
 
 class Home extends Component {
