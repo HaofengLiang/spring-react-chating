@@ -28,10 +28,10 @@ public class DatabaseLoader implements CommandLineRunner {
         User test2 = new User("test2@gmail.com", "test2", "123123");
         this.userRepository.save(test1);
         this.userRepository.save(test2);
-        this.messageRepository.save(new Message(test1, test2, "Hi, there!", new Date().getTime()));
-        this.messageRepository.save(new Message(test1, test2, "Shall we talk?", new Date().getTime()));
-        this.messageRepository.save(new Message(test2, test1, "Sure!", new Date().getTime()));
-        this.messageRepository.save(new Message(test2, test1, "Where to begin?", new Date().getTime()));
+        this.messageRepository.save(new Message(test1, test2, "Hi, there!"));
+        this.messageRepository.save(new Message(test1, test2, "Shall we talk?"));
+        this.messageRepository.save(new Message(test2, test1, "Sure!"));
+        this.messageRepository.save(new Message(test2, test1, "Where to begin?"));
 
         System.out.println(messageRepository.findMessagesByUsers(test1.getId(), test2.getId()).size());
     }

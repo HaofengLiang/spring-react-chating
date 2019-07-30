@@ -1,12 +1,20 @@
 import React, {Component} from 'react';
-import logo from './idlelogo.png';
+//import logo from './idlelogo.png';
 import './App.css';
-import Header from './header';
-import about from './about';
-import home from './home';
-import signIn from "./signIn";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from './home';
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
+class App extends Component {
+    render() {
+        return (
+            <Router>
+                <Route path='/' exact={true} component={Home}/>
+            </Router>
+        )
+    }
+}
+
+export default App;
 
 /*function App() {
   return (
@@ -28,21 +36,3 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
     </div>
   );
 }*/
-
-class App extends Component{
-  render(){
-    return(
-        <Router>
-          <div>
-            <Header className = "menu-ul">
-              <Route exact path="/" component={home} />
-              <Route path="/about" component={about} />
-              <Route path="/signIn" component={signIn} />
-            </Header>
-          </div>
-        </Router>
-    );
-  }
-}
-
-export default App;
