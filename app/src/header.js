@@ -7,15 +7,15 @@ export default class header extends Component{
     render(){
         return(
             <Router>
-                <div>
+                <div className="App-header">
                     <ul>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
+                        <li className="Home-link">
                             <Link to="/home">Home</Link>
                         </li>
-                        <li>
+                        <li className="App-link">
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li className="App-link">
                             <Link to="/signIn">Sign In</Link>
                         </li>
 
